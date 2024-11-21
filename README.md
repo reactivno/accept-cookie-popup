@@ -1,4 +1,4 @@
-# AcceptCookiePopup v1.0.0
+# AcceptCookiePopup v1.0.1
 
 Плагин для уведомления о сборе cookie
 
