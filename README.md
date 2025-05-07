@@ -1,28 +1,32 @@
-# AcceptCookiePopup v1.0.1
+# AcceptCookiePopup
 
-Плагин для уведомления о сборе cookie
+Cookie consent notification plugin
 
-## Начало работы
+## Getting Started
 
-Скачайте плагин и добавьте на сайт. Ниже добавьте вызов экземпляра AcceptCookiePopup:
+Download the plugin and add it to your website. Below, initialize an instance of `AcceptCookiePopup`:
 
 ```javascript
 new AcceptCookiePopup();
 ```
 
-## Настройка
-Плагин имеет стандартные настройки. Однако, также он может принимать объект с конфигурацией. При желании можно внести некоторые собственные изменения. Ключи для конфигурации описаны в таблице ниже:
+## Configuration
+
+The plugin comes with default settings, but it can also accept a configuration object for customization. Below is a table of available configuration keys:
 
 ```
-Ключ                  | Описание (тип, значение по-умолчанию)
+Key                   | Description (Type, Default Value)
 ----------------------|--------------------------------------
-siteName              | Имя сайта (string, ~Имя хоста~)
-linkCookiePage        | Адрес страница с правилами обработки cookie (string, '/cookie-policy/')
-showDelay             | Время задержки показа (number, 2000)
-showAnimationDuration | Продолжительность анимации показа (number, 800)
-hideMonthCount        | Время скрытия предупреждения в месяцах (number, 2)
-cookieName            | Название cookie (string, 'cookiePopup')
-cookieValue           | Значение cookie (string, 'allreadyShowed')
-popupName             | Имя БЭМ-класса popup (string, 'cookie-accept-popup')
-customCSS             | Добавление собсвенных css правил (boolean, false)
+siteName              | Website name (string, ~Hostname~)
+linkCookiePage        | URL of the cookie policy page (string, '/cookie-policy/')
+showDelay             | Delay before showing the popup in milliseconds (number, 2000)
+showAnimationDuration | Popup show animation duration in milliseconds (number, 800)
+hideMonthCount        | Number of months until the popup reappears (number, 2)
+cookieName            | Cookie name (string, 'cookiePopup')
+cookieValue           | Cookie value (string, 'alreadyShowed')
+popupName             | BEM class name for the popup (string, 'cookie-accept-popup')
+customCSS             | Enable custom CSS rules (boolean, false)
+btnText               | Accept button text (string, 'Хорошо')
+closeTitle            | Close button (крестик) (string, 'Закрыть')
+messageText           | Custom message text. Default method returns string. (function)
 ```
