@@ -4,7 +4,13 @@ Cookie consent notification plugin
 
 ## Getting Started
 
-Download the plugin and add it to your website. Below, initialize an instance of `AcceptCookiePopup`:
+Download the plugin and add it to your website. Alternatively, install via NPM:
+
+```
+npm i accept-cookie-popup
+```
+
+Below, initialize an instance of `AcceptCookiePopup`:
 
 ```javascript
 new AcceptCookiePopup();
